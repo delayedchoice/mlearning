@@ -1,18 +1,10 @@
 (ns mlearning.core
   (:require [clojure.data.csv :as csv]
-;           [proto-repl-charts.charts :as c]
             [vizard.core :refer :all]
             [vizard.lite :as lite]
             [clojure.data.generators :as rnd]
             [clojure.java.io :as io])
   (:gen-class))
-
-(+ 1 1)
-
-(defn -main
-    "I don't do a whole lot ... yet."
-    [& args]
-    (println "Hello, World!"))
 
 (defn csv-data->maps [csv-data]
     (map zipmap
@@ -29,7 +21,41 @@
                (doall))))
 
 
-(def data (get-data))
+(def quantifiable-housing-data (map #(dissoc % :ocean_proximity) (get-data)))
+
+(defn convert-strings-to-doubles [data]
+  (for [rec data]
+    (into {}
+      (for [[k v] rec] [k (if (clojure.string/blank? v) Double/NaN (Double/parseDouble v))]))))
+
+(def numeric-housing-data (convert-strings-to-doubles quantifiable-housing-data))
+
+(defn calc-median [xs]
+  (let [clean-of-nans (filter #(not (Double/isNaN %)) xs)
+        size (count clean-of-nans)
+        sorted (sort clean-of-nans)
+        a (get clean-of-nans (int (Math/floor (/ size 2))))
+        b (get clean-of-nans (int (Math/ceil (/ size 2))))
+        ]
+    (if (= a b) a (/ (+ a b) 2))))
+
+
+
+(defn fill-missing-values-with-median [data]
+  (let [ks (keys (first data))
+        medians (into {} (for [k ks] [k (calc-median (map k data))]))
+        ]
+      (for [rec data]
+        (reduce-kv (fn [init k v]
+                    (assoc init k (if (Double/isNaN v) (medians k) v)) )
+                   {}
+                   rec))))
+
+(def clean-numeric-data (fill-missing-values-with-median numeric-housing-data))
+
+(def housing-labels (map :median_house_value clean-numeric-data))
+
+(def clean-numeric-input-data (map #(dissoc % :median_house_value) clean-numeric-data))
 
 (defn histogram-enum-data [data]
   "uses values in data enums and counts occurences"
@@ -71,18 +97,18 @@
 ;(def median-house-value-historgram
 ;  (p! (lite/lite {:mark "bar"
 ;                  :encoding {:x {:field "x"
-;                                 :type "ordinal"}
+;                                :axis {:title "Median House Value"}
+;                                :type "ordinal"}
 ;                             :y {:aggregate "sum"
 ;                                 :field "y"
 ;                                 :type "quantitative"}
 ;                             :color {:field "col"
 ;                                     :type "nominal"}}}
-;                 (make-graphable-hist-data
-;                   (map (comp #(Double/parseDouble %) :median_house_value) data)
-;                   50))))
+;                 (make-graphable-hist-data housing-labels 50))))
 ;(def median-income-histogram
 ;  (p! (lite/lite {:mark "bar"
 ;                  :encoding {:x {:field "x"
+;                                :axis {:title "Median Income"}
 ;                                 :type "ordinal"}
 ;                             :y {:aggregate "sum"
 ;                                 :field "y"
@@ -91,18 +117,19 @@
 ;                                     :type "nominal"}}}
 ;                 (make-graphable-hist-data
 ;                   ;had to scale, graphics got confused
-;                   (map (comp #(* 100 %) #(Double/parseDouble %) :median_income) data)
+;                   (map (comp #(* 100 %) :median_income) clean-numeric-input-data)
 ;                   50))))
 ;(def ocean-proximity-histogram
 ;  (p! (lite/lite {:mark "bar"
 ;                  :encoding {:x {:field "x"
+;                                 :axis {:title "Ocean Proximity"}
 ;                                 :type "nominal"}
 ;                             :y {:aggregate "sum"
 ;                                 :field "y"
 ;                                 :type "quantitative"}
 ;                             :color {:field "col"
 ;                                     :type "nominal"}}}
-;                 (make-graphable-enum-hist-data (map :ocean_proximity data)))))
+;                 (make-graphable-enum-hist-data (map :ocean_proximity (get-data))))))
 ;
 
 (defn in-test-set? [id ratio]
@@ -110,12 +137,12 @@
     (< h (* ratio 256))))
 
 (defn add-id-field [data]
-  (map #(assoc % :id (int (+ (* (Double/valueOf (:longitude %)) 1000) (Double/valueOf (:latitude %))))) data))
+  (map #(assoc % :id (int (+ (* (:longitude %) 1000) (:latitude %)))) data))
 
-(def data-with-id (add-id-field data))
+(def data-with-id (add-id-field clean-numeric-input-data))
 
 (defn add-income-cat [data]
-  (map #(let [i (Math/ceil (/ (Double/valueOf (:median_income %)) 1.5))
+  (map #(let [i (Math/ceil (/ (:median_income %) 1.5))
               v (if (> i 5) 5 (int i))]
           (assoc % :income-cat v)) data))
 
@@ -137,7 +164,7 @@
          ]
      {:train-data train-data :test-data test-data})))
 
-(def stratified-data (make-stratified-test-and-train data-with-income-cat :income-cat 0.2 42))
+;(def stratified-data (make-stratified-test-and-train data-with-income-cat :income-cat 0.2 42))
 
 (defn calc-pearson-cc [X Y]
   (let [sumX (apply + X)
@@ -169,19 +196,19 @@
       (fn [init k v]
         (assoc init
                k
-               (reduce-kv (fn [in-init in-k in-v]
-                            (assoc in-init in-k (calc-pearson-cc (map (comp #(Double/parseDouble (if (clojure.string/blank?  %) "0" %))  k) data)
-                                                                 (map (comp #(Double/parseDouble (if (clojure.string/blank?  %) "0" %))  in-k) data)) ))
-                          {}
-                          v)))
+               (reduce-kv
+                 (fn [in-init in-k in-v]
+                   (assoc in-init in-k (calc-pearson-cc (map k data) (map in-k data))))
+                 {}
+                 v)))
       {}
       matrix)))
 
 ;(def long-lat-scatter-plot
-;  (let [long-lat-data (map #(into {} [[:median_house_value (Double/parseDouble (:median_house_value %)) ]
-;                                      [:population (Double/parseDouble (:population %)) ]
-;                                      [:x (Double/parseDouble (:longitude %)) ]
-;                                      [:y (Double/parseDouble (:latitude %)) ]]) data)]
+;  (let [long-lat-data (map #(into {} [[:median_house_value (:median_house_value %) ]
+;                                      [:population (:population %) ]
+;                                      [:x (:longitude %) ]
+;                                      [:y (:latitude %) ]]) clean-numeric-data)]
 ;    (p! (lite/lite {:mark "point"
 ;                    :width 700
 ;                    :height 700
