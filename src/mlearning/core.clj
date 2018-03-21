@@ -23,12 +23,19 @@
 
 (def quantifiable-housing-data (map #(dissoc % :ocean_proximity) (get-data)))
 
-(defn convert-strings-to-doubles [data]
+(defn fix-data [k v ignored-fields]
+  (cond (.contains ignored-fields k) v
+        (clojure.string/blank? v) Double/NaN
+        :else (Double/parseDouble v)))
+
+(defn convert-strings-to-doubles [data & ignored-fields  ]
   (for [rec data]
     (into {}
-      (for [[k v] rec] [k (if (clojure.string/blank? v) Double/NaN (Double/parseDouble v))]))))
+      (for [[k v] rec]
+        (let [new-val (fix-data k v ignored-fields)]
+          [k new-val])))))
 
-(def numeric-housing-data (convert-strings-to-doubles quantifiable-housing-data))
+(def numeric-housing-data (convert-strings-to-doubles (get-data) :ocean_proximity))
 
 (defn calc-median [xs]
   (let [clean-of-nans (filter #(not (Double/isNaN %)) xs)
@@ -39,11 +46,16 @@
         ]
     (if (= a b) a (/ (+ a b) 2))))
 
-
-
-(defn fill-missing-values-with-median [data]
+(defn calc-medians [data]
   (let [ks (keys (first data))
         medians (into {} (for [k ks] [k (calc-median (map k data))]))
+        ]
+      medians))
+
+(defn fill-missing-values-with-median [data & ignored-fields  ]
+  (let [;ks (keys (first data))
+        _ (prn ignored-fields)
+        medians (calc-medians (map #(apply (partial dissoc %) ignored-fields) data ))
         ]
       (for [rec data]
         (reduce-kv (fn [init k v]
@@ -51,7 +63,7 @@
                    {}
                    rec))))
 
-(def clean-numeric-data (fill-missing-values-with-median numeric-housing-data))
+(def clean-numeric-data (fill-missing-values-with-median numeric-housing-data :ocean_proximity))
 
 (def housing-labels (map :median_house_value clean-numeric-data))
 
@@ -60,6 +72,12 @@
 (defn histogram-enum-data [data]
   "uses values in data enums and counts occurences"
  (reduce #(update %1 %2 (fnil inc 0)) {} data) )
+
+;(defn convert-enum-field-to-numbered-category [data field]
+; (let [hist (histogram-enum-data (map field data))
+;       categories (keys hist)
+;       ]
+;   (for [rec data])) )
 
 (defn histogram-data [data num-bins]
   "uses real numeric values divides into bins and counts occurences"
