@@ -28,32 +28,35 @@
         (clojure.string/blank? v) Double/NaN
         :else (Double/parseDouble v)))
 
-(defn convert-strings-to-doubles [data & ignored-fields  ]
+(defn convert-strings-to-doubles [data & {:keys [ignored-fields] :or {ignored-fields []}} ]
   (for [rec data]
     (into {}
       (for [[k v] rec]
         (let [new-val (fix-data k v ignored-fields)]
           [k new-val])))))
 
-(def numeric-housing-data (convert-strings-to-doubles (get-data) :ocean_proximity))
+(def numeric-housing-data (convert-strings-to-doubles (get-data) :ignored-fields [:ocean_proximity]))
 
 (defn calc-median [xs]
-  (let [clean-of-nans (filter #(not (Double/isNaN %)) xs)
+  (let [
+        clean-of-nans (filter #(not (Double/isNaN %)) xs)
         size (count clean-of-nans)
         sorted (sort clean-of-nans)
-        a (get clean-of-nans (int (Math/floor (/ size 2))))
-        b (get clean-of-nans (int (Math/ceil (/ size 2))))
+        a (nth sorted (int (Math/floor (/ size 2))))
+        b (nth sorted (int (Math/ceil (/ size 2))))
         ]
     (if (= a b) a (/ (+ a b) 2))))
 
 (defn calc-medians [data]
   (let [ks (keys (first data))
+        _ (prn "calc-medians: " (first data))
         medians (into {} (for [k ks] [k (calc-median (map k data))]))
         ]
       medians))
 
-(defn fill-missing-values-with-median [data & ignored-fields  ]
+(defn fill-missing-values-with-median [data & {:keys [ignored-fields] :or {ignored-fields []}}]
   (let [;ks (keys (first data))
+       ; _ (prn "ignored: " ignored-fields)
         medians (calc-medians (map #(apply (partial dissoc %) ignored-fields) data ))
         ]
       (for [rec data]
@@ -62,7 +65,7 @@
                    {}
                    rec))))
 
-(def clean-numeric-data (fill-missing-values-with-median numeric-housing-data :ocean_proximity))
+(def clean-numeric-data (fill-missing-values-with-median numeric-housing-data :ignored-fields [:ocean_proximity]))
 
 (def housing-labels (map :median_house_value clean-numeric-data))
 
