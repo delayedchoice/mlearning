@@ -54,7 +54,6 @@
 
 (defn fill-missing-values-with-median [data & ignored-fields  ]
   (let [;ks (keys (first data))
-        _ (prn ignored-fields)
         medians (calc-medians (map #(apply (partial dissoc %) ignored-fields) data ))
         ]
       (for [rec data]
