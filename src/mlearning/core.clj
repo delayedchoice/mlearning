@@ -3,6 +3,8 @@
             [vizard.core :refer :all]
             [vizard.lite :as lite]
             [clojure.data.generators :as rnd]
+            [kixi.stats.core :as stats]
+            [redux.core :as redux]
             [clojure.java.io :as io])
   (:gen-class))
 
@@ -13,18 +15,60 @@
               repeat)
          (rest csv-data)))
 
-(defn fix-data [k v ignored-fields]
-  (cond (.contains ignored-fields k) v
-        (clojure.string/blank? v) Double/NaN
-        :else (Double/parseDouble v)))
+(defn fix-data [k v]
+  (if (clojure.string/blank? v)
+      Double/NaN
+      (Double/parseDouble v)))
 
-(defn convert-strings-to-doubles [data & {:keys [ignored-fields] :or {ignored-fields []}} ]
+(defn convert-strings-to-doubles [data]
   (for [rec data]
     (into {}
       (for [[k v] rec]
-        (let [new-val (fix-data k v ignored-fields)]
+        (let [new-val (fix-data k v )]
           [k new-val])))))
 
+;;housing["rooms_per_household"] = housing["total_rooms"]/housing["households"]
+;;housing["bedrooms_per_room"] = housing["total_bedrooms"]/housing["total_rooms"]
+;;housing["population_per_household"]=housing["population"]/housing["households"]
+;
+(defn create-combined-attributes [data]
+  (for [rec data]
+     (let [total-rooms (:total_rooms rec)
+           households (:households rec)
+           total-bedrooms (:total_bedrooms rec)
+           population (:population rec) ]
+       {:room-per-household (/ total-rooms households)
+        :bedrooms-per-room (/ total-bedrooms total-rooms)
+        :populatoin-per-household (/ population households)})))
+
+(defn add-combined-attributes [data]
+  (map merge data (create-combined-attributes data)))
+
+(defn get-stats [data]
+  (transduce identity
+             (redux/fuse {:mean stats/mean :sd stats/standard-deviation}) data))
+
+(defn ->std-value [v {:keys [mean sd]}]
+  (/ (- v mean) sd))
+
+(defn standardize [data]
+  (let [stats (into {} (for [k (keys (first data))]
+                        [k (get-stats (map k data))]))
+       ; _ (prn "stats: " stats)
+        ]
+    (for [rec data]
+      (reduce-kv (fn [init k v] (assoc init k (->std-value v (stats k)))) {} rec))))
+
+(defn fix-empty-strings [data]
+  (for [rec data]
+    (into {}
+      (for [[k v] rec]
+          [k (if (clojure.string/blank? v) :missing-value v)]))))
+
+(defn make-one-hot [xs]
+  (let [kys (map keyword (distinct xs))
+        v (into {} (for [k kys] [k 0]))]
+    (map #(assoc %2 (keyword %1) 1) xs (repeat v) )))
 
 (defn calc-median [xs]
   (let [
@@ -43,13 +87,13 @@
         ]
       medians))
 
-(defn fill-missing-values-with-median [data & {:keys [ignored-fields] :or {ignored-fields []}}]
+(defn fill-missing-values-with-median [data]
   (let [;ks (keys (first data))
        ; _ (prn "ignored: " ignored-fields)
-        relevant-data (map #(apply (partial dissoc %) ignored-fields) data )
-        medians (calc-medians relevant-data)
+        ;relevant-data (map #(apply (partial dissoc %) ignored-fields) data )
+        medians (calc-medians data)
         ]
-      (for [rec relevant-data]
+      (for [rec data]
         (reduce-kv (fn [init k v]
                     (assoc init k (if (Double/isNaN v) (medians k) v)) )
                    {}
@@ -100,16 +144,16 @@
   (let [h (-> id hash (bit-and 0xFF))]
     (< h (* ratio 256))))
 
-(defn make-stratified-test-and-train [data field test-percentage seed]
+(defn make-stratified-test-and-train [data test-percentage & {:keys [stratified-field seed] :or {stratified-field :nothing seed 42}}]
   (binding [rnd/*rnd* (java.util.Random. seed)]
-   (let [field-data (map field data)
+   (let [stratified-field-data (map stratified-field data)
          ;_ (prn "field-data: " field-data)
-         hist (histogram-enum-data field-data)
+         hist (histogram-enum-data stratified-field-data)
          total-count (count data)
          split-data (into {} (for [[k v] hist]
                          (let [pct (double (/ v total-count))
-                               _ (prn "key: " k " pct: " pct " index: " (int (* pct total-count test-percentage)))
-                               filtered-data (filter #(= (% field) k) data)
+                               ;_ (prn "key: " k " pct: " pct " index: " (int (* pct total-count test-percentage)))
+                               filtered-data (if (not= stratified-field :nothing) (filter #(= (% stratified-field) k) data) data)
                                shuffled-data (rnd/shuffle filtered-data)
                                [test-data train-data] (split-at (int (* pct total-count test-percentage)) shuffled-data)]
                            [k {:train-data train-data :test-data test-data}])))
