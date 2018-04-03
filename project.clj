@@ -11,6 +11,9 @@
                  [kixi/stats "0.4.0"]
                  [org.clojure/data.generators "0.1.2"]
                  [org.clojure/data.csv "0.1.4"]
+                 [hswick/jutsu.ai "0.1.3"]
+                 [org.nd4j/nd4j-native-platform "0.9.1"]
+                 [incanter "1.9.2"]
                  [uncomplicate/neanderthal "0.18.0"]
                  [org.clojure/clojure "1.8.0"]]
   :main ^:skip-aot mlearning.core

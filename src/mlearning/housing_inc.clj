@@ -1,12 +1,12 @@
-(ns mlearning.housing
+(ns mlearning.housing-inc
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]
             [vizard.core :refer :all]
+            [vizard.lite :as lite]
             [incanter.core :as i]
             [incanter.io]
             [incanter.stats :as s]
             [incanter.charts :as c]
-            [vizard.lite :as lite]
             [mlearning.core :as ml]))
 
 (defn get-data  []
@@ -78,9 +78,14 @@
 (defn ->vectors [data]
   (->> data
        (map #(into (sorted-map) %))
-       (map vals ))) (def prepped-data (prep-pipeline (get-data))) (def train-data (:train-data prepped-data)) (def num1 (num-pipeline train-data))
+       (map vals )))
+
+(def prepped-data (prep-pipeline (get-data)))
+(def train-data (:train-data prepped-data))
+(def num1 (num-pipeline train-data))
 (def cat1 (cat-pipeline train-data))
 (def ready-data-map (combine-pipeline-outputs num1 cat1))
+
 (def outputs (map :median_income ready-data-map))
 ;(def calc-output (dge 1 16512 outputs))
 (def inputs (map #(dissoc % :median_income) ready-data-map))
@@ -88,8 +93,9 @@
 ;(def calc-input (dge 18 16512 (apply concat input-vec)))
 
 ;(def solution (sv (view-sy (mm (trans calc-input) calc-input)) (mm (trans calc-input) calc-output)))
+;(def model (s/linear-model inputs outputs :intercept false))
 
-;(def model (s/linear-model outputs (i/to-matrix inputs)  :intercept true))
+;
 ;
 ;
 ;
@@ -103,63 +109,10 @@
 ;          :longitude
 ;          :latitude] )
 ;
-(def long-lat-scatter-plot
-  (let [long-lat-data (map #(into {} [[:median_house_value (:median_house_value %) ]
-                                      [:population (:population %) ]
-                                      [:x (:longitude %) ]
-                                      [:y (:latitude %) ]]) numeric-training-data)]
-    (p! (lite/lite {:mark "point"
-                    :width 700
-                    :height 700
-                    :encoding {:x {:field "x"
-                                    :scale {:domain [-125 -113]}
-                                    :type "quantitative"}
-                               :y {:field "y"
-                                    :scale {:domain [32 44]}
-                                    :type "quantitative"}
-                               n
-                               :size {:field "population"
-                                      :type "quantitative"}
-                               :color {:field "median_house_value"
-                                       :type "quantitative"
-                                       :scale {:scheme "inferno"}}}}
-                  long-lat-data))))
-
-;building histogramsa -- need labels
-;(def median-house-value-historgram
-;  (p! (lite/lite {:mark "bar"
-;                  :encoding {:x {:field "x"
-;                                :axis {:title "Median House Value"}
-;                                :type "ordinal"}
-;                             :y {:aggregate "sum"
-;                                 :field "y"
-;                                 :type "quantitative"}
-;                             :color {:field "col"
-;                                     :type "nominal"}}}
-;                 (make-graphable-hist-data housing-labels 50))))
-;(def median-income-histogram
-;  (p! (lite/lite {:mark "bar"
-;                  :encoding {:x {:field "x"
-;                                :axis {:title "Median Income"}
-;                                 :type "ordinal"}
-;                             :y {:aggregate "sum"
-;                                 :field "y"
-;                                 :type "quantitative"}
-;                             :color {:field "col"
-;                                     :type "nominal"}}}
-;                 (make-graphable-hist-data
-;                   ;had to scale, graphics got confused
-;                   (map (comp #(* 100 %) :median_income) clean-numeric-input-data)
-;                   50))))
-(def ocean-proximity-histogram
-  (p! (lite/lite {:mark "bar"
-                  :encoding {:x {:field "x"
-                                 :axis {:title "Ocean Proximity"}
-                                 :type "nominal"}
-                             :y {:aggregate "sum"
-                                 :field "y"
-                                 :type "quantitative"}
-                             :color {:field "col"
-                                     :type "nominal"}}}
-                 (ml/make-graphable-enum-hist-data categorical-housing-data))))
+(def family-data
+  (incanter.io/read-dataset "resources/all_160_in_51.P35.csv"
+                            :header true))
+(def housing (i/sel family-data :cols [:HU100]))
+(def families (i/sel family-data :cols [:P035001]))
+(def families-lm (s/linear-model housing families :intercept false))
 
