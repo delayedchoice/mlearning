@@ -1,0 +1,898 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head><meta http-equiv="X-UA-Compatible" content="IE=IE8" />
+
+		<script type="text/javascript" src="/PAO_PROPERTYSEARCH/javascript/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/PAO_PROPERTYSEARCH/javascript/plugins.js"></script>
+		<script type="text/javascript" src="/PAO_PROPERTYSEARCH/javascript/actions.js"></script>
+		
+		<title>
+	Property Appraiser - Property Details
+</title><link rel="stylesheet" type="text/css" href="../style/base.css" media="screen" /><link rel="stylesheet" type="text/css" href="../style/print.css" media="print" />
+
+        <script type="text/javascript">
+            function openWin(re,sec) {
+                var url = "../Feedback.aspx?RE=" + re + "&Section=" + sec
+                window.open(url,'Feedback','WIDTH=700,HEIGHT=800,toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,screenX=200,screenY=0,left=100,top=0,address=0')
+            }
+        </script>
+        
+	<link href="../App_Themes/coj/coj.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/coj/print.css" type="text/css" rel="stylesheet" /></head>
+<body>
+	<form name="aspnetForm" method="post" action="Detail.aspx?RE=0597220000" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNzMzNzI5NDBkGAoFHmN0bDAwJGNwaEJvZHkkZ3JpZFNhbGVzSGlzdG9yeQ88KwAKAQgCAWQFNWN0bDAwJGNwaEJvZHkkcmVwZWF0ZXJCdWlsZGluZyRjdGwwMCRncmlkQnVpbGRpbmdBcmVhDzwrAAoBCAIBZAU5Y3RsMDAkY3BoQm9keSRyZXBlYXRlckJ1aWxkaW5nJGN0bDAwJGdyaWRCdWlsZGluZ0VsZW1lbnRzDzwrAAoBCAIBZAUYY3RsMDAkY3BoQm9keSRndlBSQ0ZpbmFsDzwrAAoBCAIBZAU7Y3RsMDAkY3BoQm9keSRyZXBlYXRlckJ1aWxkaW5nJGN0bDAwJGdyaWRCdWlsZGluZ0F0dHJpYnV0ZXMPPCsACgEIAgFkBRxjdGwwMCRjcGhCb2R5JGdyaWRUYXhEZXRhaWxzDzwrAAoBCAIBZAUXY3RsMDAkY3BoQm9keSRncmlkTGVnYWwPPCsACgEIAgFkBRZjdGwwMCRjcGhCb2R5JGdyaWRMYW5kDzwrAAoBCAIBZAUXY3RsMDAkY3BoQm9keSRndlBSQ1RyaW0PPCsACgEIAgFkBR9jdGwwMCRjcGhCb2R5JGdyaWRFeHRyYUZlYXR1cmVzDzwrAAoBCAIBZKUuNuqTWfiOOJNXv6acD+zt/ZIN" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="84BFC611" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="402Wyjjb3Z81JzTkkApfMPfF9M7wj3NxtKZJa-l7RDYg_Jcyvsw2-5fiHPJ6N9Z4Hp5RIZWe24J3jfwCeN1ooSPjKv0MCBmm9cJp50H3eBJb-M2UhSNzMKwOaIfuvOcNtYaJyw2" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKw9PPKCALC5IwIApOElcUDAtO81EIC0+KM9gXSF8j56qJuWBNi+arf6HOm4RaxDA==" />
+		<div id="doc3" class="yui-t7">
+
+			<!-- skip to navigation -->
+			<div id="skipto">
+				<span>Skip to:</span>
+				<ol>
+					<li id="sk_content"><a id="ctl00_hl_nav" accesskey="1" href="../#content">Skip Navigation</a></li>
+					<li id="sk_basic"><a id="ctl00_hl_basic" accesskey="2" href="Search.aspx">Basic Search</a></li>
+					<li id="sk_advanced"><a id="ctl00_h1_advanced" accesskey="3" href="../Sales/Search.aspx">Advanced Search</a></li>
+					<li id="sk_tang"><a id="ctl00_h1_tang" accesskey="4" href="../Tangible/Search.aspx">Tangible Search</a></li>
+					<li id="sk_footer"><a id="ctl00_hl_footer" accesskey="5" href="../#ft">Footer</a></li>
+					<li id="sk_bc"><a id="ctl00_hl_bc" accesskey="6" href="../#bc">Breadcrumbs</a></li>
+				</ol>
+			</div>
+				
+			<!-- header -->
+			<div id="hd" style="height:260px">
+				
+					<a href="http://www.coj.net/Departments/Property+Appraiser/default.htm" id="ctl00_home" style="width:1000px;height:500px" title="Home">
+						
+                        <img src="../images/header/propApprSearch_bannerImage.png" id="ctl00_homeimg" alt="Home" /></a>
+				
+				
+				
+				
+				<div id="cojnetbits">
+					<!-- breadcrumbs -->
+					<div id="bc">
+					   
+						<ol id="breadcrumbs">
+							<li id="first">
+								<a href="http://www.coj.net">Home</a>
+								<span>&gt;</span>
+							</li>
+							<li>
+								<a href="http://www.coj.net/Departments/default.htm">Offices</a>
+								<span>&gt;</span>
+							</li>
+							<li>
+								<a href="http://www.coj.net/Departments/Property+Appraiser/default.htm">Property Appraiser</a>
+								<span>&gt;</span>
+							</li>
+							<li id="last">
+								
+    Basic Search
+
+ <script type="text/javascript">
+
+     function openFeedback(re, sec) 
+     {
+         var loc = window.location.href.split('/').slice(0, -2).join('/');
+         var url = loc + "/Feedback.aspx?RE=" + re + "&Section=" + sec;
+         window.open(url, "", "location=no,height=800,width=800,resizable=no");
+         //window.showModalDialog(url, "", 'dialogHeight:800px; dialogWidth:800px; resizable:1');
+      }
+ </script> 
+
+<script type="text/javascript">
+    window.downloadPDF = function (year, type) {
+        var url = window.location.href.replace(/&pdfYear=([^&])*|&pdfType=([^&])*/ig, '');
+        window.location = url + '&pdfYear=' + year + '&pdfType=' + type
+    }
+</script>
+
+
+
+							</li>
+						</ol>
+					</div>
+					
+					<!-- coj.net search -->
+					<div id="searchBox">
+						<fieldset>
+							<ol id="cojSearch">
+								<li class="first">
+									<label>Search <a href="http://www.coj.net">coj.net</a></label>
+									<input name="ctl00$tbCojSearch" type="text" id="ctl00_tbCojSearch" />
+									<input type="submit" name="ctl00$btnCojSubmitSearch" value="Go" id="ctl00_btnCojSubmitSearch" class="btn" />
+								</li>
+							</ol>
+						</fieldset>
+					</div>
+				</div>
+
+				
+			</div>
+			
+			<!-- body -->            
+			<div id="bd" >
+            <!-- navigation -->
+				<div class="yui-g">
+					<div id="navWrapper">
+						<div id="navContainer">
+							<ol id="nav">
+								
+										<li>
+											<a id="ctl00_menu_ctl00_navItem" class="active" href="/PAO_PROPERTYSEARCH/Basic/Search.aspx">Basic Search</a>
+										</li>
+									
+										<li>
+											<a id="ctl00_menu_ctl01_navItem" href="/PAO_PROPERTYSEARCH/Sales/Search.aspx">Advanced Search</a>
+										</li>
+									
+										<li>
+											<a id="ctl00_menu_ctl02_navItem" class="last" href="/PAO_PROPERTYSEARCH/Tangible/Search.aspx">Tangible Search</a>
+										</li>
+									
+							</ol>
+							
+						</div>
+					</div>
+				</div>
+				<!-- body content -->
+                <!-- style="padding-left:300px"-->
+				<div class="yui-g" id="content">
+					
+    <!-- Core information -->
+    <div id="detailsWrapper">
+        <div id="details_topper">
+            <div id="note">
+                <span id="ctl00_cphBody_lblNoteHeader" class="noteHeader">Tip: </span> 
+                <span id="ctl00_cphBody_lblNote">Collapse sections you do not want to print.</span>
+            </div>
+            <div id="searchControl">
+                <div class="newSearch">
+                    <a id="ctl00_cphBody_lbNewSearch" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$lbNewSearch&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Search.aspx&quot;, false, true))">New Search</a>
+                </div>
+                <div class="refineSearch">
+                    <a id="ctl00_cphBody_lbRefineSearch" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$lbRefineSearch&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Search.aspx?Refine=Y&quot;, false, true))">Refine Search</a>
+                </div>
+            </div>
+        </div>
+        <div id="details_header">
+            <div id="ownerName">
+                
+                        <h2>
+                            <span id="ctl00_cphBody_repeaterOwnerInformation_ctl00_lblOwnerName" class="longTip" title="Owner's Name - Owner listed on the last document processed by the Property Appraiser’s Office, which convey title or an interest in the property.  This may not be the last document recorded with the Clerk of the Circuit Court regarding the property.  If &quot;ET AL&quot; follows the name, then multiple owners are listed on the recorded ownership document.  All names do not appear here.  See recorded document for full listing.  The Official Record Book &amp; Page of the transaction is listed in the Sales History section below.">BAKER CHRISTINE C</span>
+                            <a title="Data Correction: Submit correction to name or mailing address. Additional documentation may be needed to complete this request."><img id="ctl00_cphBody_repeaterOwnerInformation_ctl00_Image7" onClick="javascript:openFeedback('0597220000', 'N');return false;" src="../images/note_new.gif" border="0" /></a>
+                        </h2>
+                        <div class="data">
+                            <ol>
+                                <li>
+                                    <span id="ctl00_cphBody_repeaterOwnerInformation_ctl00_lblMailingAddressLine1" class="shortTip" title="Mailing Address - The mailing address from the last transaction or Homestead Exemption application.  If the mailing address is incorrect, please click the Data Correction square above (next to the property owner’s name) to request a change of address.">5327 ATTLEBORO ST</span></li>
+                                <li>
+                                    <span id="ctl00_cphBody_repeaterOwnerInformation_ctl00_lblMailingAddressLine2"><font color="Azure"></font></span></li>
+                                <li>
+                                    <span id="ctl00_cphBody_repeaterOwnerInformation_ctl00_lblMailingAddressLine3">JACKSONVILLE, FL 32205</span></li>
+                            </ol>
+                        </div>
+                    
+                        <h2>
+                            <span id="ctl00_cphBody_repeaterOwnerInformation_ctl01_lblOwnerName" class="longTip" title="Owner's Name - Owner listed on the last document processed by the Property Appraiser’s Office, which convey title or an interest in the property.  This may not be the last document recorded with the Clerk of the Circuit Court regarding the property.  If &quot;ET AL&quot; follows the name, then multiple owners are listed on the recorded ownership document.  All names do not appear here.  See recorded document for full listing.  The Official Record Book &amp; Page of the transaction is listed in the Sales History section below.">BAKER ALEXANDER B</span>
+                            <a title="Data Correction: Submit correction to name or mailing address. Additional documentation may be needed to complete this request."></a>
+                        </h2>
+                        <div class="data">
+                            <ol>
+                                <li>
+                                    <span id="ctl00_cphBody_repeaterOwnerInformation_ctl01_lblMailingAddressLine1" class="shortTip" title="Mailing Address - The mailing address from the last transaction or Homestead Exemption application.  If the mailing address is incorrect, please click the Data Correction square above (next to the property owner’s name) to request a change of address."></span></li>
+                                <li>
+                                    <span id="ctl00_cphBody_repeaterOwnerInformation_ctl01_lblMailingAddressLine2"><font color="Azure"></font></span></li>
+                                <li>
+                                    <span id="ctl00_cphBody_repeaterOwnerInformation_ctl01_lblMailingAddressLine3"></span></li>
+                            </ol>
+                        </div>
+                    
+            </div>
+            <div id="primaryAddr">
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderPrimarySiteAddress" class="shortTip" title="Primary Site Address - The location address.  This may be unavailable if the structure is brand new.  Vacant properties will not have an address.">Primary Site Address</span>
+                </h2>
+                <div class="data">
+                    <ol>
+                        <li>
+                            <span id="ctl00_cphBody_lblPrimarySiteAddressLine1">5327 ATTLEBORO ST </span>
+                        </li>
+                        <li>
+                            <span id="ctl00_cphBody_lblPrimarySiteAddressLine2">Jacksonville FL 32205</span></li>
+                    </ol>
+                </div>
+            </div>
+            <div id="plat">
+                <h2>
+                    
+                        <span id="ctl00_cphBody_lblHeaderBookPage" class="longTip" title="Official Record Book &amp; Page Number - Official Record Book and Page assigned by the Clerk of the Circuit Court to recorded documents processed by the Property Appraiser’s Office.  The first number is the book number; the second is the beginning page.  Use these numbers to retrieve an image of the document from the web site of the Clerk of the Circuit Court or to order the document from the Clerk’s Office.">Official Record Book/Page</span>
+                    
+                </h2>
+                <div class="data">
+                    <span id="ctl00_cphBody_lblBookPage">18297-01361</span>
+                </div>
+            </div>
+            <div id="tile">
+                <h2>
+                    <a id="ctl00_cphBody_linkHeaderTileNumber" class="shortTip" title="Tile Number - A number assigned to a one mile square section of land which refers to the Section, Township and Range of that piece of land, according to the Public Land Survey (PLS) system utilized by the State of Florida." href="../Tile%20Map%20Index.pdf" target="_blank">Tile #</a></h2>
+                <div class="data">
+                    <span id="ctl00_cphBody_lblTileNumber">6419</span>
+                </div>
+            </div>
+        </div>
+        <div class="collapsable">
+            <!-- Property and Value information -->
+            <div id="details_value">
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderPropertyAddress">5327 ATTLEBORO ST</span>
+                </h2>
+                <div class="data">
+                    <div id="propDetail">
+                        <div id="propDetail_data" class="dt_noHeader">
+                            <h3>
+                                <span id="ctl00_cphBody_lblHeaderPropertyDetail">Property Detail</span></h3>
+                            <table>
+                                <tr>
+                                    <th scope="row">
+                                        <span id="ctl00_cphBody_lblHeaderRealEstateNumber">RE #</span></th>
+                                    <td>
+                                        <span id="ctl00_cphBody_lblRealEstateNumber">059722-0000</span></td>
+                                </tr>
+                                <tr class="alt">
+                                    <th scope="row">
+                                        <a href="http://www.coj.net/Departments/Property-Appraiser/Millage-Rates.aspx" target="_blank">
+                                            <span id="ctl00_cphBody_lblHeaderTaxDistrict" class="shortTip" title="Tax District - Code assigned to determine taxing district.">Tax District</span>
+                                        </a>
+                                    </th>
+                                    <td>
+                                        <span id="ctl00_cphBody_lblTaxDistrict">GS</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a id="ctl00_cphBody_linkCodePropertyUse" href="../Codes.aspx?Code=PU" target="_blank"><span id="ctl00_cphBody_lblHeaderPropertyUse" class="shortTip" title="Property Use - Describes the main use of the property as a whole.">Property Use</span></a></th><td>
+                                        <span id="ctl00_cphBody_lblPropertyUse">0100 Single Family</span></td>
+                                </tr>
+                                <tr class="alt">
+                                    <th scope="row">
+                                        <span id="ctl00_cphBody_lblHeaderNumberOfBuildings"># of Buildings</span></th>
+                                    <td>
+                                        <span id="ctl00_cphBody_lblNumberOfBuildings">1</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <span id="ctl00_cphBody_lblHeaderLegalDescription" class="shortTip" title="Legal Description - Legal description listed on the last document processed by the Property Appraiser’s Office.  This may not be the complete legal description due to space constraints.  Please see the recorded document for the full listing.">Legal Desc.</span></th>
+                                    <td>
+                                        <span id="ctl00_cphBody_lblLegalDescription1">For full legal description see</span>
+                                        <br />
+                                        <span id="ctl00_cphBody_lblLegalDescription2">Land & Legal section below</span>
+                                    </td>
+                                </tr>
+                                <tr class="alt">
+                                    <th scope="row">
+                                        <a id="ctl00_cphBody_linkCodeSubdivision" href="../Codes.aspx?Code=SD" target="_blank"><span id="ctl00_cphBody_lblHeaderSubdivision" class="shortTip" title="Subdivision - Number used to identify all properties within a platted subdivision.">Subdivision</span></a></th><td>
+                                        <span id="ctl00_cphBody_lblSubdivision">00980 ROOSEVELT GARDENS</span></td>
+                                </tr>
+
+                                  <tr>
+                                    <th scope="row">
+                                        <span id="ctl00_cphBody_lblHeaderTotalArea" class="shortTip" title="Total Area - This is property's total square footage as calculated by the Geographic Information System (GIS). Amount may differ from land line info.">Total Area</span></th>
+                                    <td>
+                                        <span id="ctl00_cphBody_lblTotalArea1">8717</span>
+                                        <br />
+                                        <span id="ctl00_cphBody_lblTotalArea2"></span>
+                                    </td>
+                                </tr>
+                                 
+                                 
+                            </table>
+                        </div>
+                        <div id="saleNote">
+                            <h4>
+                                Note</h4><span id="ctl00_cphBody_lblSaleNote1">The sale of this property may result in higher property taxes. For more information go to </span>
+                            <a id="ctl00_cphBody_linkSaveOurHomes" class="shortTip" title="Save Our Homes (SOH) -  SOH is state law which limits the annual increase of the value of homesteaded property to 3% or the National Consumer Price Index (CPI), whichever is less." href="http://www.coj.net/Departments/Property-Appraiser/Save-Our-Homes-Amendment-10.aspx" target="_blank">Save Our Homes</a>
+                            <span id="ctl00_cphBody_lblSaleNote2"> and our </span>
+                            <a id="ctl00_cphBody_linkPropertyTaxEstimator" class="shortTip" title="Property Tax Estimator - The Tax Estimator estimates taxes for property based on its value." href="http://cojapps.coj.net/tax_calc/" target="_blank">Property Tax Estimator</a>
+                            <span id="ctl00_cphBody_lblSaleNote3">.</span>
+                            <h4 id="disclaimer">
+                                In Progress</h4><span id="ctl00_cphBody_lblDisclaimer1">'In Progress' property values, exemptions and other supporting information on this page are part of the working tax roll and are subject to change. Certified values listed in the Value Summary are those certified in October, but may include any official changes made after certification</span>
+                                
+                            
+                            
+                            
+                            <a id="ctl00_cphBody_linkPropertyValuation" href="../How%20We%20Value%20Property%20-%20Final.pdf" target="_blank">Learn how the Property Appraiser’s Office values property.</a>
+                        </div>
+                    </div>
+                    <div id="propValue" class="dt_header">
+                        <h3>
+                            <span id="ctl00_cphBody_lblHeaderValueSummary">Value Summary</span></h3>
+                        <table>
+                            <tr>
+                                <th>
+                                </th>
+                                <th scope="col">
+                                    <a id="ctl00_cphBody_linkHeaderCertified" href="../How%20We%20Value%20Property%20-%20Final.pdf" target="_blank"><span id="ctl00_cphBody_lblHeaderCertified" class="shortTip" title="2017 Certified - The certified values are based on the certified tax roll, certified in October each year. The certified taxable values were used to calculate your taxes. The displayed values also include any official corrections made after certification.">2017 Certified</span></a></th><th scope="col">
+                                    <a id="ctl00_cphBody_linkHeaderInProgress" href="../How%20We%20Value%20Property%20-%20Final.pdf" target="_blank"><span id="ctl00_cphBody_lblHeaderInProgress" class="shortTip" title="2018 In Progress - &quot;In Progress&quot; values are working numbers only. They are subject to change until the Tax Roll is certified in October.">2018 In Progress</span></a></th></tr><tr class="alt">
+                                <th scope="row" class="row">
+                                    <span id="ctl00_cphBody_lblHeaderValueMethod">Value Method</span></th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblValueMethodCertified">CAMA</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblValueMethodInProgress">CAMA</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="row">
+                                    <span id="ctl00_cphBody_lblHeaderBuildingValue" class="shortTip" title="Total Building Value - Total market value of all structures on the property.">Total Building Value</span></th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblBuildingValueCertified">$73,933.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblBuildingValueInProgress">$123,721.00</span></td>
+                            </tr>
+                            <tr class="alt">
+                                <th scope="row" class="row">
+                                    <span id="ctl00_cphBody_lblHeaderExtraFeatureValue">Extra Feature Value</span></th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblExtraFeatureValueCertified">$1,235.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblExtraFeatureValueInProgress">$1,411.00</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="row">
+                                    <span id="ctl00_cphBody_lblHeaderLandValueMarket" class="shortTip" title="The Land Value (Market) -  The total market value of the property’s land.  For properties with an agricultural classification, this total includes the market value of common lands (not classified agricultural) and the full market value (not classified value) of land that is under the agricultural classification.">Land Value (Market)</span></th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblLandValueMarketCertified">$13,950.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblLandValueMarketInProgress">$15,694.00</span></td>
+                            </tr>
+                            <tr class="alt">
+                                <th scope="row" class="row">
+                                    <a href="http://www.coj.net/Departments/Property-Appraiser/Greenbelt-Classification.aspx" target="_blank">
+                                        <span id="ctl00_cphBody_lblHeaderLandValueAgriculture" class="shortTip" title="Land Value (Agriculture) - The value of property with an agricultural classification reflecting the value reduction due to the classification. This total includes the market value of common lands (not classified as agricultural) and the classified value of agricultural lands.">Land Value (Agric.)</span>
+                                    </a>
+                                </th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblLandValueAgricultureCertified">$0.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblLandValueAgricultureInProgress">$0.00</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="row">
+                                    <span id="ctl00_cphBody_lblHeaderJustMarketValue" class="shortTip" title="Just (Market) Value - The Property Appraiser’s Office determination of fair Market Value is based on the market – what a willing purchaser would likely pay a willing seller, exclusive of reasonable fees and transaction costs.">Just (Market) Value</span></th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblJustMarketValueCertified">$89,118.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblJustMarketValueInProgress">$140,826.00</span></td>
+                            </tr>
+                            <tr class="alt">
+                                <th scope="row" class="row">
+                                    
+                                        <span id="ctl00_cphBody_lblHeaderAssessedValueA10" class="longTip" title="Assessed Value - Based on market value limited by: caps on annual increases or a portability reduction from a prior homestead. Annual increases in assessed value are capped for homesteaded property at 3% or less and 10% for non-homesteaded properties (non-homestead cap does not apply to school millage). Assessed value can also include agricultural classified values. Assessed value moves independently of the market value.  Do not use assessed values to compare properties, determine sale price or estimate taxes after a sale. (Use the &quot;Tax Estimator&quot;)">Assessed Value</span>
+                                    
+                                </th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblAssessedValueA10Certified">$89,118.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblAssessedValueA10InProgress">$140,826.00</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="row">
+                                <span id="ctl00_cphBody_lblHeaderCapDiffPortAmount" class="longTip" title="Cap Differential/Portability Amount - This is the amount deferred from your market value that results from one of the following: caps on annual increases (3% or less &quot;Save our Homes&quot; cap for homesteaded property or 10% cap for non-homesteaded property) or portability (the &quot;Save Our Homes&quot; benefit transferred from a previous homestead to a new homestead.) ">Cap Diff/Portability Amt</span>                                
+                                
+                                </th>
+                                <td><span id="ctl00_cphBody_lblCapDiffCertified">$0.00</span> / <span id="ctl00_cphBody_lblPortAmountCertified">$0.00</span></td>
+                                <td><span id="ctl00_cphBody_lblCapDiffInProgress">$0.00</span> / <span id="ctl00_cphBody_lblPortAmountInProgress">$0.00</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="row">
+                                    <a href="http://www.coj.net/Departments/Property-Appraiser/Exemptions.aspx" target="_blank">
+                                        <span id="ctl00_cphBody_lblHeaderExemptValue" class="longTip" title="Exemptions - Total value of all exemptions (except Senior Homestead Exemption and Historic Exemption) granted by the Property Appraiser’s Office to the property owner for the stated year.  These benefits are granted as of January 1 for a full year.  The Homestead Exemption automatically renews.  There are other exemptions available.  (If this amount is not reflective of your exemptions or you have questions regarding this amount, please call our Exemption line at (904) 630-2020.)">Exemptions</span>
+                                    </a>
+                                </th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblExemptValueCertified">$0.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblExemptValueInProgress">See below</span></td>
+                            </tr>
+                            <tr class="alt">
+                                <th scope="row" class="row">
+                                    <span id="ctl00_cphBody_lblHeaderTaxableValue" class="shortTip" title="Taxable Value - The value on which property is taxed.  This is the assessed value minus the total exempt amount. Taxes are determined by multiplying the tax rate by this value.">Taxable Value</span></th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxableValueCertified">$89,118.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxableValueInProgress">See below</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="propGIS">
+                        <h3>
+                            <span id="ctl00_cphBody_lblHeaderJaxGISMap">JaxGIS Map</span>
+                            <span> 
+                                <p style="margin-bottom:2px;"> </p>
+                                <a id="ctl00_cphBody_linkJaxGISMap" class="shortTip" title="JaxGIS Map This Property - Leaves PAO site and maps property on the City of Jacksonville’s Geographic Information System (GIS).  Report map problems to GIS staff using the contact link on the following disclaimer page." href="http://maps.coj.net/MapIt.asp?ReNum=059722+0000" target="_blank">map this property</a>
+                            </span> 
+                        </h3>
+                        <div id="propGISimg">
+                            <img id="ctl00_cphBody_imgNoGISImageFound" src="../images/AddressValid.png" alt="Duval County" border="0" />
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <!-- Exemptions -->
+            <div id="details_exemptions">
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderExemptions" class="shortTip" title="Taxable Values and Exemptions - Not every exemption applies to all taxing authorities; therefore, there may be different taxable values used when calculating your taxes. Your taxes for each authority are determined by multiplying the applicable taxable value by the tax rate (millage) set by that authority. Taxing authorities and applicable exemptions are listed below.">Taxable Values and Exemptions – In Progress</span>
+                    <a title="Data Correction: Submit correction to exemption status."><img id="ctl00_cphBody_imgExemptions" onClick="javascript:openFeedback('0597220000', 'T');" src="../images/note_new.gif" border="0" /></a>
+                </h2>
+            <div id="ctl00_cphBody_divExemptions" class="data"> 
+                    <p id="ctl00_cphBody_tipNoExemptions">
+                        <span id="ctl00_cphBody_temp"><b>If there are no exemptions applicable to a taxing authority, the Taxable Value is the same as the Assessed Value listed above in the Value Summary box.</b></span></p><div id="propExemptionsCounty">
+                        <h3>
+                            <span id="ctl00_cphBody_lblHeaderExemptionsCounty" class="shortTip" title="County/Municipal Taxable Value - Applies to millage rates set by: City of Jacksonville (County), City of Jacksonville Beach, City of Atlantic Beach, City of Neptune Beach and Town of Baldwin. The Senior Homestead (25yr.) Exemption is only applicable to county taxes; therefore, for those with a Senior (25 yr.) Exemption listed here, the taxable value in this column applies only to county taxes">County/Municipal Taxable Value</span>
+                            
+                        </h3>
+                        <span id="ctl00_cphBody_lblExemptionsCountyNoData">No applicable exemptions</span>
+                        
+                    </div>
+                    <div id="propExemptionsFind">
+                        <h3>
+                            <span id="ctl00_cphBody_lblHeaderExemptionsFind" class="shortTip" title="SJRWMD/FIND Taxable Value - Applies to: St. Johns River Water Management District; and Florida Inland Navigation District">SJRWMD/FIND Taxable Value</span></h3>
+                        <span id="ctl00_cphBody_lblExemptionsFindNoData">No applicable exemptions</span>
+                        
+                    </div>
+                    <div id="propExemptionsSchool">
+                        <h3>
+                            <span id="ctl00_cphBody_lblHeaderExemptionsSchool" class="shortTip" title="School Taxable Value - Applies to: Duval County School Board – Levies By Local Board and By State Law.">School Taxable Value</span></h3>
+                        <span id="ctl00_cphBody_lblExemptionsSchoolNoData">No applicable exemptions</span>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Sales History -->
+            <div id="details_history">
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderSalesHistory">Sales History</span>
+                    <a title="Data Correction: Submit correction to sales history."><img id="ctl00_cphBody_imgSalesHistory" onClick="javascript:openFeedback('0597220000', 'S');" src="../images/note_new.gif" border="0" /></a>
+                </h2>
+                <div id="ctl00_cphBody_divSalesHistory" class="gv data">
+                    
+                    <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_gridSalesHistory">
+		<tr>
+			<th scope="col">Book/Page</th><th scope="col">Sale Date</th><th class="addTip" scope="col"><span class="shortTip" title="Sales Price - The sales price is the dollar figure for which the property was sold.">Sale Price</span></th><th scope="col"><a href="../Codes.aspx?Code=IT" target="_blank"><span class="shortTip" title="Deed Instrument Type Code - This code describes the type of legal document used to establish ownership.">Deed Instrument Type Code</span></a></th><th scope="col"><a href="../FLGuidelinesforSalesQualification.pdf" target="_blank"><span class="longTip" title="Qualified or Unqualified - The Florida Department of Revenue provides guidelines for determining whether a property is qualified or unqualified. <b>Unqualified sales</b> are those which are not <i>arms-length</i> transactions, such as transfers between affiliated parties, those involving government agencies, transfers where ownership conveyed is less than 100%, or those involving banks, loan or mortgage companies and others. The qualification on recently posted deeds (particularly in the last year or two) could change during the review process">Qualified/Unqualified</span></a></th><th scope="col"><span class="shortTip" title="Vacant or Improved - Indicates whether the site was vacant or contained improvements at the time of sale.  Improvements are generally any buildings or permanent structures on the land.">Vacant/Improved</span></th>
+		</tr><tr>
+			<td><a href="http://oncore.duvalclerk.com/showdetails.aspx?Book=18297&amp;Page=1361&amp;BookType=OR" target="_blank">18297-01361</a></td><td>2/7/2018</td><td>$185,000.00</td><td>WD - Warranty Deed</td><td>Qualified</td><td>Improved</td>
+		</tr><tr class="alt">
+			<td><a href="http://oncore.duvalclerk.com/showdetails.aspx?Book=18192&amp;Page=169&amp;BookType=OR" target="_blank">18192-00169</a></td><td>11/15/2017</td><td>$69,000.00</td><td>SW - Special Warranty</td><td>Unqualified</td><td>Improved</td>
+		</tr><tr>
+			<td><a href="http://oncore.duvalclerk.com/showdetails.aspx?Book=18190&amp;Page=1005&amp;BookType=OR" target="_blank">18190-01005</a></td><td>11/13/2017</td><td>$37,500.00</td><td>WD - Warranty Deed</td><td>Unqualified</td><td>Improved</td>
+		</tr><tr class="alt">
+			<td><a href="http://oncore.duvalclerk.com/showdetails.aspx?Book=15460&amp;Page=946&amp;BookType=OR" target="_blank">15460-00946</a></td><td>12/17/2010</td><td>$100.00</td><td>MS - Miscellaneous</td><td>Unqualified</td><td>Improved</td>
+		</tr><tr>
+			<td><a href="http://oncore.duvalclerk.com/showdetails.aspx?Book=3029&amp;Page=1011&amp;BookType=OR" target="_blank">03029-01011</a></td><td>12/30/1899</td><td>$100.00</td><td> - Unknown</td><td>Unqualified</td><td>Improved</td>
+		</tr>
+	</table>
+</div>
+                </div>
+            </div>
+            <!-- <asp:hyperlinkfield datatextfield="FormattedBookPage" headertext="Book/Page" datanavigateurlfields="Book,Page" datanavigateurlformatstring="http://www.duvalclerk.com/paLink/?type=OR&book={0}&page={1}" target="_blank" /> -->
+            <!-- ExtraFeatures -->
+            <div id="details_features">
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderExtraFeatures">Extra Features</span>
+                    <a title="Data Correction: Submit correction to extra features."><img id="ctl00_cphBody_imgExtraFeatures" onclick="javascript:openFeedback('0597220000', 'E');" src="../images/note_new.gif" border="0" /></a>
+                </h2>
+                <div id="ctl00_cphBody_divExtraFeatures" class="gv data">
+                    
+                    <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_gridExtraFeatures">
+		<tr>
+			<th scope="col">LN</th><th scope="col"><a href="../Codes.aspx?Code=EFT" target="_blank"><span class="shortTip" title="Feature Code - Extra Features are miscellaneous improvements on the property such as patios, pools and fences.">Feature Code</span></a></th><th scope="col">Feature Description</th><th scope="col">Bldg.</th><th scope="col">Length</th><th scope="col">Width</th><th scope="col">Total Units</th><th scope="col">Value</th>
+		</tr><tr>
+			<td>1</td><td>GRWR2</td><td>Garage/Util Bdg Wood</td><td>1</td><td>16</td><td>16</td><td>256.00</td><td>$1,411.00</td>
+		</tr>
+	</table>
+</div>
+                </div>
+            </div>
+            
+            <!-- Land and Legal -->
+            <div id="details_landLegal">
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderLandAndLegal">Land & Legal</span>
+                    <a title="Data Correction: Submit correction to land size."><img id="ctl00_cphBody_imgLand" onClick="javascript:openFeedback('0597220000', 'L');" src="../images/note_new.gif" border="0" /></a>                    
+                </h2>
+                <div id="ctl00_cphBody_divLandAndLegal" class="data">                    
+                    <div id="propLand">
+                        <h3>
+                            <span id="ctl00_cphBody_lblHeaderLand">Land</span></h3>
+                        <div class="gv">
+                            <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_gridLand">
+		<tr>
+			<th scope="col">LN</th><th class="propLandCode" scope="col"><a href="../Codes.aspx?Code=LU" target="_blank"><span class="shortTip" title="Land Use Code - The LandUse denotes the primary use of all or part of the land for a particular property.">Code</span></a></th><th scope="col">Use Description</th><th scope="col"><a href="../Codes.aspx?Code=Z" target="_blank"><span class="shortTip" title="Zoning Code - Zoning Code – The Zoning Code listed here does not reflect any changes after January 1. This zoning district is provided for assessment purposes only & is not to be used as determination of the official zoning district. Please contact the Planning & Development Dept. at 904-255-7800 to confirm zoning district for this property.">Zoning</span></a></th><th scope="col">Front</th><th scope="col">Depth</th><th scope="col"><span class="shortTip" title="Land Category - Market (Common): The just or fair market value of the land (does not include land classified as agricultural.)  Market Agricultural: The just or fair market value of the land that is classified Agricultural.  Agricultural: The assessment of land that is classified Agricultural.  Value is based solely on its Agricultural use.">Category</span></th><th scope="col">Land Units</th><th scope="col"><a href="../Codes.aspx?Code=LT" target="_blank"><span class="shortTip" title="Land Type - Units in which property is measured.">Land Type</span></a></th><th scope="col">Land Value</th>
+		</tr><tr>
+			<td>1</td><td>0100</td><td>RES LD 3-7 UNITS PER AC</td><td>RLD-60</td><td>75.00</td><td>113.00</td><td>Common</td><td>75.00</td><td>Front Footage</td><td>$15,694.00</td>
+		</tr>
+	</table>
+</div>
+                        </div>
+                        
+                    </div>
+                    <div id="propLegal">
+                        <h3>
+                            <span id="ctl00_cphBody_lblHeaderLegal">Legal</span></h3>
+                        <div class="gv">
+                            <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_gridLegal">
+		<tr>
+			<th scope="col">LN</th><th scope="col">Legal Description</th>
+		</tr><tr>
+			<td>1</td><td>18-99    19-2S-26E</td>
+		</tr><tr class="alt">
+			<td>2</td><td>ROOSEVELT GARDENS S/D PT SE1/4</td>
+		</tr><tr>
+			<td>3</td><td>LOT 11                       BLK 5</td>
+		</tr>
+	</table>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <!-- ***************************************************-->
+           <!-- Condos -->           
+                 
+                  
+           <!-- **************************************************-->
+
+            <!-- Buildings -->
+            <div id="details_buildings">
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderBuildings">Buildings</span>
+                    <a title="Data Correction: Submit correction to building data."><img id="ctl00_cphBody_imgBuildings" onClick="javascript:openFeedback('0597220000', 'B');" src="../images/note_new.gif" border="0" /></a>
+                </h2>
+                <div id="buildingsDetailWrapper">
+                    
+                    
+                            <h3>
+                                <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblBuildingNumber">Building 1</span></h3>
+                            <div class="actualBuildingData">
+                                <div class="propBuildingInfo">
+                                    <div id="addr" class="addr">
+                                        <h4>
+                                            <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblHeaderBuildingSiteAddress">Building 1 Site Address</span></h4>
+                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblBuildingSiteAddressLine1">5327 ATTLEBORO ST Unit </span>
+                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblBuildingSiteAddressLine2">Jacksonville FL  32205</span>
+                                    </div>
+                                    <div class="buildingType">
+                                        <div class="dt_noHeader">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblHeaderBuildingType" class="shortTip" title="Building Type - The Type (also know as building use) denotes the primary use of a building on a particular property.">Building Type</span></th>
+                                                    <td>
+                                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblBuildingType">0101 - SFR 1 STORY</span></td>
+                                                </tr>
+                                                <tr class="alt">
+                                                    <th>
+                                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblHeaderYearBuilt" class="shortTip" title="Actual Year Built (AYB) - Actual year built of improvements, buildings or permanent structures.">Year Built</span></th>
+                                                    <td>
+                                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblYearBuilt">1947</span></td>
+                                                </tr>
+                                                 <tr>
+                                                    <th>
+                                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblHeaderBldgValue" class="shortTip" title="Building Value - Value of individual building.">Building Value</span></th>
+                                                    <td>
+                                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblBldgValue">$123,721.00</span></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="typeList">
+                                        <div class="gv">
+                                            <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_repeaterBuilding_ctl00_gridBuildingArea">
+		<tr>
+			<th class="faux_th" scope="col"><a href="../Codes.aspx?Code=SAT" target="_blank"><span class="shortTip" title="Area Type - Area Type denotes the different types of a building structure such as the base or main structure, and any other sub structures such as porches, garages, canopies, patios, etc.">Type</span></a></th><th scope="col"><span class="shortTip" title="Gross Area - Gross Area denotes the total square footage of all building areas.">Gross Area</span></th><th scope="col"><span class="shortTip" title="Heated Area - Heated Area denotes the areas within a building served by heating and air conditioning.">Heated Area</span></th><th scope="col"><span class="shortTip" title="Effective Area - Adjusted area used in the calculation of the building value accounting for  sub-areas such as garages, porches, etc.">Effective Area</span></th>
+		</tr><tr>
+			<td class="faux_th">Finished Carport</td><td>540</td><td>0</td><td>135</td>
+		</tr><tr class="alt">
+			<td class="faux_th">Addition</td><td>504</td><td>504</td><td>454</td>
+		</tr><tr>
+			<td class="faux_th">Base Area</td><td>1118</td><td>1118</td><td>1118</td>
+		</tr><tr class="alt">
+			<td class="faux_th">Finished Open Porch</td><td>88</td><td>0</td><td>26</td>
+		</tr><tr>
+			<td class="faux_th">Addition</td><td>280</td><td>280</td><td>252</td>
+		</tr><tr class="alt">
+			<td class="faux_th">Total</td><td>2530</td><td>1902</td><td>1985</td>
+		</tr>
+	</table>
+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="propBuildingElements">
+                                    <div class="gv element_detail">
+                                        <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_repeaterBuilding_ctl00_gridBuildingElements">
+		<tr>
+			<th scope="col">Element</th><th scope="col">Code</th><th scope="col">Detail</th>
+		</tr><tr>
+			<td class="col_element">Exterior Wall</td><td class="col_code">26</td><td class="col_detail">26 Alum/Vinyl</td>
+		</tr><tr class="alt">
+			<td class="col_element">Roof Struct</td><td class="col_code">3</td><td class="col_detail">3 Gable or Hip</td>
+		</tr><tr>
+			<td class="col_element">Roofing Cover</td><td class="col_code">3</td><td class="col_detail">3 Asph/Comp Shng</td>
+		</tr><tr class="alt">
+			<td class="col_element">Interior Wall</td><td class="col_code">3</td><td class="col_detail">3 Plastered</td>
+		</tr><tr>
+			<td class="col_element">Int Flooring</td><td class="col_code">12</td><td class="col_detail">12 Hardwood</td>
+		</tr><tr class="alt">
+			<td class="col_element">Int Flooring</td><td class="col_code">14</td><td class="col_detail">14 Carpet</td>
+		</tr><tr>
+			<td class="col_element">Heating Fuel</td><td class="col_code">4</td><td class="col_detail">4 Electric</td>
+		</tr><tr class="alt">
+			<td class="col_element">Heating Type</td><td class="col_code">4</td><td class="col_detail">4 Forced-Ducted</td>
+		</tr><tr>
+			<td class="col_element">Air Cond</td><td class="col_code">3</td><td class="col_detail">3 Central</td>
+		</tr>
+	</table>
+</div>
+                                    </div>
+                                    <br />
+                                    <div class="gv element_stories">
+                                        <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_repeaterBuilding_ctl00_gridBuildingAttributes">
+		<tr>
+			<th scope="col"><span class="longTip" title="Element - Bedroom, bath and room/unit counts have different meanings for different building types. For most residential, including 2-9 unit apartments, the actual number of bedrooms, baths and dwelling units are listed. (Two half baths, however, are listed as one full bath.) For larger, multifamily residential buildings the average number of bedrooms and bathrooms per unit are listed, as well as the number of living units. For all commercial buildings, the baths count represents the number of plumbing fixtures, and the rooms/units are also listed. ">Element</span></th><th scope="col">Code</th><th scope="col">&nbsp;</th>
+		</tr><tr>
+			<td class="col_element">Stories</td><td class="col_code">1.000</td><td class="col_detail"></td>
+		</tr><tr class="alt">
+			<td class="col_element">Bedrooms</td><td class="col_code">4.000</td><td class="col_detail"></td>
+		</tr><tr>
+			<td class="col_element">Baths</td><td class="col_code">2.000</td><td class="col_detail"></td>
+		</tr><tr class="alt">
+			<td class="col_element">Rooms / Units</td><td class="col_code">1.000</td><td class="col_detail"></td>
+		</tr>
+	</table>
+</div>
+                                    </div>
+                                </div>
+                                <div class="propBuildingImage">
+                                    <img id="ctl00_cphBody_repeaterBuilding_ctl00_imgTraversingImage" src="http://apps.coj.net/PAO_PropertySearch/Traverse/Traverse.dll?width=300&amp;height=300&amp;traverse=FCP:60,28:=S30 W18 N30 E18 $
+ADT:42,0:=E18 S28 W18 N28 $
+BAS:0,43:=N29 E42 S24 W20 S5 W22 $
+FOP:22,38:=S8 E11 N8 W11 $
+ADT:42,14:=N14 W20 S14 E20 $
+." alt="Building layout (traversing data) of this property" border="0" />
+                                </div>
+                                <div class="propTrav">
+                                    <h3>
+                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblHeaderTraversingData">Traversing Data</span></h3>
+                                    <div id="propTravData" class="propTravData">
+                                        <span id="ctl00_cphBody_repeaterBuilding_ctl00_lblTraversingData">FCP:60,28:=S30 W18 N30 E18 $
+ADT:42,0:=E18 S28 W18 N28 $
+BAS:0,43:=N29 E42 S24 W20 S5 W22 $
+FOP:22,38:=S8 E11 N8 W11 $
+ADT:42,14:=N14 W20 S14 E20 $
+.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <!-- a -->
+                            </div>
+                        
+                </div>
+            </div>
+            
+            <!-- Trim -->
+            <div id="details_trim">
+                <h2>
+                    <a id="ctl00_cphBody_linkTax" href="http://www.coj.net/Departments/Property-Appraiser/Truth-in-Millage-(Trim).aspx" target="_blank"><span id="ctl00_cphBody_lblHeaderTax" class="shortTip" title="2017 Notice of Proposed Property Taxes - This section includes data from the last Notice of Proposed Property Taxes (TRIM Notice) mailed to property owners each year in August. Any changes/updates made after the TRIM mailing until the Tax Roll closes in early October are included in this section.">2017 Notice of Proposed Property Taxes Notice (TRIM Notice)</span></a></h2><div id="ctl00_cphBody_divTax" class="data">
+                        
+                    
+                    <div class="gv">
+                        <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_gridTaxDetails">
+		<tr>
+			<th scope="col"><a href="http://www.coj.net/Departments/Property-Appraiser/Millage-Rates.aspx" target="_blank"><span class="shortTip" title="Taxing Authority - Taxing authorities set the tax (millage) rate which is applied to your property’s taxable value to generate your property taxes. ">Taxing District</span></a></th><th scope="col">Assessed Value</th><th scope="col"><span class="shortTip" title="Exemptions Granted - All exemptions granted including special exemptions that are applicable only to certain taxing authorities. (i.e. Additional Homestead Exemption, Senior Citizen and Historic exemptions)">Exemptions</span></th><th scope="col">Taxable Value</th><th scope="col"><span class="shortTip" title="Last Year Property Taxes - The taxes that applied last year to your property.">Last Year</span></th><th scope="col"><span class="shortTip" title="Proposed Property Taxes - What your taxes will be this year under the BUDGET ACTUALLY PROPOSED by each local taxing authority.">Proposed</span></th><th scope="col"><span class="shortTip" title="Rolled-back Property Taxes - What your taxes will be this year if each Taxing Authority does NOT INCREASE its property tax levy.">Rolled-back</span></th>
+		</tr><tr>
+			<td class="taxDistrictExtended">Gen Govt Ex B&B</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$89,118.00</td><td class="trimValue">$967.48</td><td class="trimValue">$1,019.68</td><td class="trimValue">$971.64</td>
+		</tr><tr class="alt">
+			<td class="taxDistrictExtended">Public Schools:        By State Law</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$89,118.00</td><td class="trimValue">$385.07</td><td class="trimValue">$377.59</td><td class="trimValue">$384.86</td>
+		</tr><tr>
+			<td class="taxDistrictExtended">By Local Board</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$89,118.00</td><td class="trimValue">$190.08</td><td class="trimValue">$200.34</td><td class="trimValue">$189.98</td>
+		</tr><tr class="alt">
+			<td class="taxDistrictExtended">FL Inland Navigation Dist.</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$89,118.00</td><td class="trimValue">$2.71</td><td class="trimValue">$2.85</td><td class="trimValue">$2.67</td>
+		</tr><tr>
+			<td class="taxDistrictExtended">Water Mgmt Dist.  SJRWMD</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$89,118.00</td><td class="trimValue">$24.39</td><td class="trimValue">$24.28</td><td class="trimValue">$24.28</td>
+		</tr><tr class="alt">
+			<td class="taxDistrictExtended">Gen Gov Voted</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$0.00</td><td class="trimValue">$0.00</td>
+		</tr><tr>
+			<td class="taxDistrictExtended">School Board Voted</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$89,118.00</td><td class="trimValue">$0.00</td><td class="trimValue">$0.00</td><td class="trimValue">$0.00</td>
+		</tr><tr class="trimTotals">
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Totals</td><td>$1,569.73</td><td>$1,624.74</td><td>$1,573.43</td>
+		</tr>
+	</table>
+</div>
+                    </div>
+                    <div id="trimTotals">
+                    </div>
+
+
+                    <!-- Trim Extended -->
+                    <div id="details_trimExtended" class="dt_header">
+                        <table>
+                            <tr>
+                                <th>
+                                </th>
+                                <th>
+                                    <span id="ctl00_cphBody_lblHeaderTaxJustValue">Just Value</span></th>
+                                <th>
+                                    <span id="ctl00_cphBody_lblHeaderTaxAssessedValue">Assessed Value</span></th>
+                                <th>
+                                    <span id="ctl00_cphBody_lblHeaderTaxExemptions">Exemptions</span></th>
+                                <th>
+                                    <span id="ctl00_cphBody_lblHeaderTaxTaxableValue" class="shortTip" title="Taxable Value - Taxable Values can differ by taxing authority due to specific exemptions such as the Senior Citizen Exemption.">Taxable Value</span></th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="row">
+                                    <span id="ctl00_cphBody_lblHeaderTaxLastYear">Last Year</span></th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxLastYearJustValue">$84,556.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxLastYearAssessedValue">$84,556.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxLastYearExemptions">$0.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxLastYearTaxableValue">$84,556.00</span></td>
+                            </tr>
+                            <tr class="alt">
+                                <th scope="row" class="row">
+                                    <span id="ctl00_cphBody_lblHeaderTaxCurrentYear">Current Year</span></th>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxCurrentYearJustValue">$89,118.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxCurrentYearAssessedValue">$89,118.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxCurrentYearExemptions">$0.00</span></td>
+                                <td>
+                                    <span id="ctl00_cphBody_lblTaxCurrentYearTaxableValue">$89,118.00</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="Div2">                                    
+                       
+              <br />                        
+                       <table>
+                            <tr class="alt">
+                              <td>
+                                 <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_gvPRCTrim">
+		<tr onmouseover="this.style.cursor = 'hand'" onmouseout="this.style.cursor = 'pointer'" onclick="javascript:downloadPDF(2017, 'trim')">
+			<td><font color="#005882"><u><b>2017 TRIM Property Record Card (PRC)</b></u></font></td>
+		</tr>
+	</table>
+</div>
+                            </td>
+                         </tr>
+                        </table>
+                        <span id="ctl00_cphBody_Label2">This PRC reflects property details and values at the time of the original mailing of the Notices of Proposed Property Taxes (TRIM Notices) in August.</span></div></div><div id="details_prc">
+                
+                        </div>
+                </div>
+
+               <div id="ctl00_cphBody_Div1"> 
+                 
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderPropertyRecordCard">Property Record Card (PRC)</span></h2>
+                            
+                
+                                    
+                
+                
+                
+  
+            
+            <div id="details_prc1">
+            <span id="ctl00_cphBody_lblPropertyRecordCardNotice">The PRC accessed below reflects property details and values at the time of Tax Roll Certification in October of the year listed.</span>
+                <div id="prcData">
+                    <div>
+	<table class="gridview" cellspacing="0" sortedascendingcellstyle-cssclass="sort-asc" sorteddescendingcellstyle-cssclass="sort-dec" border="0" id="ctl00_cphBody_gvPRCFinal">
+		<tr onmouseover="this.style.cursor = 'hand'" onmouseout="this.style.cursor = 'pointer'" onclick="javascript:downloadPDF(2017, 'final')">
+			<td><font color="#005882"><u><b>2017</b></u></font></td>
+		</tr><tr class="alt" onmouseover="this.style.cursor = 'hand'" onmouseout="this.style.cursor = 'pointer'" onclick="javascript:downloadPDF(2016, 'final')">
+			<td><font color="#005882"><u><b>2016</b></u></font></td>
+		</tr><tr onmouseover="this.style.cursor = 'hand'" onmouseout="this.style.cursor = 'pointer'" onclick="javascript:downloadPDF(2015, 'final')">
+			<td><font color="#005882"><u><b>2015</b></u></font></td>
+		</tr><tr class="alt" onmouseover="this.style.cursor = 'hand'" onmouseout="this.style.cursor = 'pointer'" onclick="javascript:downloadPDF(2014, 'final')">
+			<td><font color="#005882"><u><b>2014</b></u></font></td>
+		</tr>
+	</table>
+</div>
+                    <br />
+                    <span id="ctl00_cphBody_lblPRCData">&#8226 To obtain a historic Property Record Card (PRC) from the Property Appraiser's Office, submit your request here:</span>
+                    <a title="Submit Property Record Card Request.">
+                    <img id="ctl00_cphBody_imgPRCData" onClick="javascript:openFeedback('0597220000', 'P');" src="../images/note_new.gif" border="0" /></a>
+               </div>
+            </div>
+         </div>
+
+
+
+            <!-- More (links) -->
+            <div id="details_more">
+                <h2>
+                    <span id="ctl00_cphBody_lblHeaderMoreInformation">More Information</span></h2>
+                <div id="links">
+                    <ul id="moreLinks">
+                        <li class="first">
+                            <a id="ctl00_cphBody_linkContactUs" href="http://www.coj.net/departments/property-appraiser/contact-us.aspx">Contact Us</a></li>
+                        <li>
+                            <a id="ctl00_cphBody_linkParcelTaxRecord" title="By clicking this link, you will exit the Property Appraiser’s Web site and be directed to the Tax Collector’s site." href="../Leaving.aspx?Destination=PTR&amp;RE=0597220000">Parcel Tax Record</a></li>
+                        <li>
+                            <a id="ctl00_cphBody_linkGISMap" href="http://maps.coj.net/MapIt.asp?ReNum=059722+0000" target="_blank">GIS Map</a></li>
+                        <li>
+                            <a id="ctl00_cphBody_linkGoogleMap" href="http://maps.google.com/maps?q=5327+ATTLEBORO+ST,+Jacksonville+FL+32205" target="_blank">Map this property on Google Maps</a></li>
+                        <li class="last">
+                            <a id="ctl00_cphBody_linkParcelCityFeesRecord" title="By clicking this link, you will exit the Property Appraiser’s Web site and be directed to the Tax Collector’s site." href="../Leaving.aspx?Destination=RENumber&amp;RE=0597220000">City Fees Record</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+				</div>
+                
+                 <!--Microsoft Translator-->
+                 
+
+               
+                 <!--End-->
+			</div>            
+
+			<!-- footer -->
+			<div id="ft">
+				<div id="tools">
+					<h2>Tools</h2>
+					<ul>
+						<li><a href="mailto:paadmin@coj.net?subject=Re:Search Problems/Feedback">Report Search Problems</a></li>
+						<li>
+							<a id="ctl00_linkPropertyAppraiserCodes" href="../Codes.aspx">Property Appraiser Codes</a></li>
+						
+
+					</ul>
+				</div>
+				<div id="questions">
+					<h2>Have any questions?</h2>
+					<ul>
+						<li><a id="ctl00_tcContactUs" title="By clicking this link, you will exit the Property Appraiser’s Web site and be directed to the Tax Collector’s site." href="../Leaving.aspx?Destination=TC">Contact the Tax Collector about a payment</a>.</li>
+						<li><a href="mailto:paadmin@coj.net">Contact the Property Appraiser about an assessment</a>.</li>
+                        
+						
+
+					</ul>
+
+              
+				
+                <!--Microsoft Translator-->
+               
+                <!--End-->
+        
+				<span id="ctl00_lblVersion" class="versionNumber">v1.16.31 - 02</span>				
+			</div>
+		</div>
+	</form>
+</body>
+</html>
