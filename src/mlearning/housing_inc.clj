@@ -110,9 +110,9 @@
 ;          :latitude] )
 ;
 (def family-data
-  (incanter.io/read-dataset "resources/all_160_in_51.P35.csv"
+   (incanter.io/read-dataset "resources/all_160_in_51.P35.csv"
                             :header true))
 (def housing (i/sel family-data :cols [:HU100]))
-(def families (i/sel family-data :cols [:P035001]))
+(def families (i/bind-columns (i/sel family-data :cols [:P035001]) (i/sel family-data :cols [:POP100])))
 (def families-lm (s/linear-model housing families :intercept false))
 
